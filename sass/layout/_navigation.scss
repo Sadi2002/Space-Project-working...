@@ -2,8 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 7.5rem;
 
   &__burger {
     width: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .container__nav {
+    margin-bottom: 12rem;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .container__nav {
+    margin-bottom: 15rem;
   }
 }

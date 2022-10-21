@@ -1,4 +1,9 @@
-body {
-  background-image: url("../../assets/home/background-home-mobile.jpg");
+.container {
+  width: 100%;
+  height: 100vh;
   padding: 3rem;
+  background-image: url("../../assets/home/background-home-mobile.jpg");
+  object-fit: cover;
+  background-position: 0 0;
+  background-size: cover;
 }

@@ -1,0 +1,43 @@
+.container__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8.1rem;
+
+  &__title {
+    font-size: 8rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    font-family: $bellefair;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    font-family: $barlow;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: $very-light-blue;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .container__header {
+    margin-bottom: 12rem;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .container__header {
+    margin-bottom: 12rem;
+
+    &__text {
+      line-height: 3rem;
+    }
+  }
+}
