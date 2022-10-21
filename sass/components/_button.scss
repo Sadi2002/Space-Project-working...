@@ -46,6 +46,12 @@
   color: $grey;
 }
 
+.close-btn {
+  position: absolute;
+  top: 4rem;
+  right: 3rem;
+}
+
 @media screen and (min-width: 390px) {
   .big-button {
     width: 180px;

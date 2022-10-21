@@ -13,6 +13,7 @@ html {
 
 body {
   height: 100vh;
+  background-color: #000;
 }
 
 .container {
@@ -24,6 +25,11 @@ body {
      object-fit: cover;
   background-position: 0 0;
   background-size: cover;
+}
+
+.container {
+  position: relative;
+  overflow-x: hidden;
 }
 
 .container__nav {
@@ -43,14 +49,57 @@ body {
   width: 2.4rem;
 }
 
+.container__nav__list {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 65%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(40.7742px);
+          backdrop-filter: blur(40.7742px);
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8rem;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container__nav__link {
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: #d0d6f9;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+.container .hide {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
 @media screen and (min-width: 390px) {
-  .container__nav {
+  .container .container__nav {
     margin-bottom: 12rem;
   }
 }
 
 @media screen and (min-width: 412px) {
-  .container__nav {
+  .container .container__nav {
     margin-bottom: 15rem;
   }
 }
@@ -177,6 +226,12 @@ body {
   color: #0b0d17;
 }
 
+.close-btn {
+  position: absolute;
+  top: 4rem;
+  right: 3rem;
+}
+
 @media screen and (min-width: 390px) {
   .big-button {
     width: 180px;
@@ -197,5 +252,9 @@ body {
     font-size: 2.5rem;
     letter-spacing: 3px;
   }
+}
+
+.lighter {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
