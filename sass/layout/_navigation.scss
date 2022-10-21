@@ -1,0 +1,9 @@
+.container__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__burger {
+    width: 2.4rem;
+  }
+}
