@@ -62,8 +62,12 @@
   }
 }
 @media screen and (min-width: 820px) {
+  .container__header {
+    margin-bottom: 12rem;
+  }
   .container__header__text {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    width: 75%;
   }
 }
 @media screen and (min-width: 912px) {
