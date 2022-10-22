@@ -8,6 +8,7 @@
   margin: 0 auto;
   position: relative;
   border: none;
+  cursor: pointer;
 
   &::after {
     position: absolute;
@@ -20,6 +21,10 @@
     border: 5px solid $white;
     opacity: 1;
     animation: pulse 2.5s infinite;
+  }
+
+  &:hover::after {
+    animation: pulse 0.8s infinite;
   }
 }
 
@@ -116,5 +121,17 @@
   .button-link {
     font-size: 4rem;
     letter-spacing: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .big-button {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    bottom: 15%;
+  }
+  .button-link {
+    font-size: 3.2rem;
+    letter-spacing: 2px;
   }
 }

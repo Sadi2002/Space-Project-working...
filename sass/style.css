@@ -27,9 +27,24 @@ body {
   background-size: cover;
 }
 
+@media screen and (min-width: 540px) {
+  .container {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: 0 0;
   }
 }
 
@@ -83,6 +98,7 @@ body {
           transform: translateX(0%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  list-style: none;
 }
 
 .container__nav__link {
@@ -166,6 +182,72 @@ body {
     height: 10rem;
     gap: 4rem;
     width: 65%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__nav__list {
+    top: 5%;
+    right: 60%;
+    height: 10rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 65%;
+    position: relative;
+  }
+  .container__nav__list::before {
+    position: absolute;
+    content: "";
+    left: -42%;
+    top: 50%;
+    width: 45%;
+    height: 0.5px;
+    background-color: #d0d6f9;
+  }
+  .container__nav {
+    position: relative;
+    margin: 0;
+    height: 100px;
+  }
+  .container__nav__link {
+    font-size: 2rem;
+  }
+  .container__nav__logo {
+    top: 5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container__nav__list {
+    top: 5%;
+    right: 60%;
+    height: 10rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 65%;
+    position: relative;
+  }
+  .container__nav__list::before {
+    position: absolute;
+    content: "";
+    left: -45%;
+    top: 50%;
+    width: 50%;
+    height: 0.5px;
+    background-color: #d0d6f9;
+  }
+  .container__nav {
+    position: relative;
+    margin: 0;
+    height: 100px;
+  }
+  .container__nav__link {
+    font-size: 2rem;
+  }
+  .container__nav__logo {
+    top: 5%;
   }
 }
 
@@ -265,6 +347,72 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    position: relative;
+  }
+  .container__header__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 10rem;
+  }
+  .container__header {
+    margin: 22rem 0 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 10rem;
+    width: 60%;
+  }
+  .container__header__title {
+    font-size: 15rem;
+  }
+  .container__header__text {
+    text-align: left;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    width: 60%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    position: relative;
+  }
+  .container__header__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 5rem;
+  }
+  .container__header {
+    margin: 22rem 0 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 10rem;
+    width: 60%;
+  }
+  .container__header__title {
+    font-size: 15rem;
+  }
+  .container__header__text {
+    text-align: left;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    width: 60%;
+    margin: 0;
+  }
+}
+
 .big-button {
   width: 150px;
   height: 150px;
@@ -281,6 +429,7 @@ body {
   margin: 0 auto;
   position: relative;
   border: none;
+  cursor: pointer;
 }
 
 .big-button::after {
@@ -295,6 +444,11 @@ body {
   opacity: 1;
   -webkit-animation: pulse 2.5s infinite;
           animation: pulse 2.5s infinite;
+}
+
+.big-button:hover::after {
+  -webkit-animation: pulse 0.8s infinite;
+          animation: pulse 0.8s infinite;
 }
 
 @-webkit-keyframes pulse {
@@ -406,6 +560,19 @@ body {
   .button-link {
     font-size: 4rem;
     letter-spacing: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .big-button {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    bottom: 15%;
+  }
+  .button-link {
+    font-size: 3.2rem;
+    letter-spacing: 2px;
   }
 }
 
