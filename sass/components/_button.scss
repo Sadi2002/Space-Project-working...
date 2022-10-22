@@ -73,3 +73,48 @@
     letter-spacing: 3px;
   }
 }
+@media screen and (min-width: 540px) {
+  .big-button {
+    width: 170px;
+    height: 170px;
+  }
+
+  .button-link {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .close-btn {
+    display: none;
+  }
+  .big-button {
+    width: 242px;
+    height: 242px;
+  }
+
+  .button-link {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 820px) {
+  .big-button {
+    width: 300px;
+    height: 300px;
+  }
+  .button-link {
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+  }
+}
+@media screen and (min-width: 912px) {
+  .big-button {
+    width: 350px;
+    height: 350px;
+  }
+  .button-link {
+    font-size: 4rem;
+    letter-spacing: 5px;
+  }
+}

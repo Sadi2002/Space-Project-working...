@@ -41,3 +41,41 @@
     }
   }
 }
+@media screen and (min-width: 540px) {
+  .container__header {
+    margin-bottom: 9rem;
+
+    &__text {
+      width: 80%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__header__title {
+    font-size: 15rem;
+  }
+
+  .container__header__text {
+    font-size: 1.6rem;
+    width: 60%;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 820px) {
+  .container__header__text {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 912px) {
+  .container__header {
+    margin: 22rem 0 20rem;
+  }
+  .container__header__title {
+    font-size: 15rem;
+  }
+  .container__header__text {
+    width: 80%;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
