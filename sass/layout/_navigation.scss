@@ -7,8 +7,33 @@
     align-items: center;
     margin-bottom: 7.5rem;
 
+    &__logo {
+      animation: logo 5s forwards;
+      opacity: 0;
+    }
+
+    @keyframes logo {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
     &__burger {
       width: 2.4rem;
+      animation: burger 2s forwards;
+      transform: translateX(100px);
+    }
+
+    @keyframes burger {
+      from {
+        transform: translateX(100px);
+      }
+      to {
+        transform: translateX(0);
+      }
     }
 
     &__list {
@@ -98,11 +123,33 @@
     height: 10rem;
     gap: 4rem;
     width: 70%;
+    transform: translateX(1200px);
+    animation: navigation 2s forwards;
+  }
+
+  @keyframes navigation {
+    from {
+      transform: translateX(1200px);
+    }
+    to {
+      transform: translateX(550px);
+    }
   }
 
   .container__nav__logo {
     position: relative;
     left: 10px;
+    opacity: 0;
+    animation: logo 3s forwards;
+  }
+
+  @keyframes logo {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 
@@ -114,6 +161,20 @@
     width: 65%;
   }
 }
+@media screen and (min-width: 912px) {
+  .container__nav__list {
+    animation: nav912 2s forwards;
+  }
+
+  @keyframes nav912 {
+    from {
+      transform: translateX(1200px);
+    }
+    to {
+      transform: translateX(620px);
+    }
+  }
+}
 @media screen and (min-width: 1200px) {
   .container__nav__list {
     top: 5%;
@@ -122,6 +183,16 @@
     justify-content: space-evenly;
     width: 65%;
     position: relative;
+    animation: nav1200 4s forwards;
+
+    @keyframes nav1200 {
+      from {
+        transform: translateX(1500px);
+      }
+      to {
+        transform: translateX(720px);
+      }
+    }
 
     &::before {
       position: absolute;
@@ -156,6 +227,16 @@
     justify-content: space-evenly;
     width: 65%;
     position: relative;
+    animation: nav1440 4s forwards;
+
+    @keyframes nav1440 {
+      from {
+        transform: translateX(2000px);
+      }
+      to {
+        transform: translateX(900px);
+      }
+    }
 
     &::before {
       position: absolute;
@@ -180,5 +261,25 @@
 
   .container__nav__logo {
     top: 5%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container__nav__list {
+    top: 5%;
+    right: 60%;
+    height: 10rem;
+    justify-content: space-evenly;
+    width: 65%;
+    position: relative;
+    animation: nav1440 4s forwards;
+
+    @keyframes nav1440 {
+      from {
+        transform: translateX(2500px);
+      }
+      to {
+        transform: translateX(1200px);
+      }
+    }
   }
 }

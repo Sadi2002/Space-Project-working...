@@ -9,6 +9,17 @@
   position: relative;
   border: none;
   cursor: pointer;
+  transform: translateY(300px);
+  animation: big-button 4.5s 1s forwards;
+
+  @keyframes big-button {
+    from {
+      transform: translateY(300px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
 
   &::after {
     position: absolute;
@@ -57,11 +68,38 @@
   right: 3rem;
 }
 
+@media screen and (min-width: 375px) {
+  .big-button {
+    transform: translateY(300px);
+    animation: big-button 4.5s 0.3s forwards;
+
+    @keyframes big-button {
+      from {
+        transform: translateY(300px);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  }
+}
 @media screen and (min-width: 390px) {
   .big-button {
     width: 180px;
     height: 180px;
+    transform: translateY(500px);
+    animation: big-button 4.5s 0.1s forwards;
   }
+
+  @keyframes big-button {
+    from {
+      transform: translateY(500px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
   .button-link {
     font-size: 2.3rem;
     letter-spacing: 3px;
@@ -71,6 +109,17 @@
   .big-button {
     width: 200px;
     height: 200px;
+    transform: translateY(500px);
+    animation: big-button 4.5s 0.5s forwards;
+  }
+
+  @keyframes big-button {
+    from {
+      transform: translateY(500px);
+    }
+    to {
+      transform: translateY(0);
+    }
   }
 
   .button-link {
@@ -97,6 +146,17 @@
   .big-button {
     width: 242px;
     height: 242px;
+    transform: translateY(500px);
+    animation: tablet768 4.5s 1s forwards;
+  }
+
+  @keyframes tablet768 {
+    from {
+      transform: translateY(500px);
+    }
+    to {
+      transform: translateY(0);
+    }
   }
 
   .button-link {
@@ -107,10 +167,21 @@
   .big-button {
     width: 300px;
     height: 300px;
+    transform: translateY(600px);
+    animation: tablet820 4.5s 1.25s forwards;
   }
   .button-link {
     font-size: 3.5rem;
     letter-spacing: 5px;
+  }
+
+  @keyframes tablet820 {
+    from {
+      transform: translateY(600px);
+    }
+    to {
+      transform: translateY(0);
+    }
   }
 }
 @media screen and (min-width: 912px) {
@@ -128,10 +199,55 @@
     width: 250px;
     height: 250px;
     position: relative;
-    bottom: 15%;
+    bottom: 20%;
+    animation: desktop1200 4.5s 0.5s forwards;
+  }
+
+  @keyframes desktop1200 {
+    from {
+      transform: translateY(600px);
+    }
+    to {
+      transform: translateY(0);
+    }
   }
   .button-link {
     font-size: 3.2rem;
     letter-spacing: 2px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .big-button {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+  }
+  .button-link {
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .big-button {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    right: 0%;
+    animation: desktop1920 4.5s 1s forwards;
+  }
+
+  @keyframes desktop1920 {
+    from {
+      transform: translateY(600px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  .button-link {
+    font-size: 3.5rem;
+    letter-spacing: 5px;
   }
 }

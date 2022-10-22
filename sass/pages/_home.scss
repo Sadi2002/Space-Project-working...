@@ -6,6 +6,7 @@
   object-fit: cover;
   background-position: 0 0;
   background-size: cover;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 540px) {
@@ -21,7 +22,5 @@
 @media screen and (min-width: 1200px) {
   .container {
     background-image: url("../../assets/home/background-home-desktop.jpg");
-    object-fit: cover;
-    background-position: 0 0;
   }
 }
