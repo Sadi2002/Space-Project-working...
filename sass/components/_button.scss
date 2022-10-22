@@ -11,12 +11,15 @@
   cursor: pointer;
   transform: translateY(300px);
   animation: big-button 4.5s 1s forwards;
+  opacity: 0;
 
   @keyframes big-button {
     from {
+      opacity: 0;
       transform: translateY(300px);
     }
     to {
+      opacity: 1;
       transform: translateY(0);
     }
   }
@@ -72,13 +75,16 @@
   .big-button {
     transform: translateY(300px);
     animation: big-button 4.5s 0.3s forwards;
+    opacity: 0;
 
     @keyframes big-button {
       from {
+        opacity: 0;
         transform: translateY(300px);
       }
       to {
         transform: translateY(0);
+        opacity: 1;
       }
     }
   }
@@ -89,13 +95,16 @@
     height: 180px;
     transform: translateY(500px);
     animation: big-button 4.5s 0.1s forwards;
+    opacity: 0;
   }
 
   @keyframes big-button {
     from {
+      opacity: 0;
       transform: translateY(500px);
     }
     to {
+      opacity: 1;
       transform: translateY(0);
     }
   }
@@ -110,14 +119,17 @@
     width: 200px;
     height: 200px;
     transform: translateY(500px);
+    opacity: 0;
     animation: big-button 4.5s 0.5s forwards;
   }
 
   @keyframes big-button {
     from {
+      opacity: 0;
       transform: translateY(500px);
     }
     to {
+      opacity: 1;
       transform: translateY(0);
     }
   }
@@ -147,14 +159,17 @@
     width: 242px;
     height: 242px;
     transform: translateY(500px);
+    opacity: 0;
     animation: tablet768 4.5s 1s forwards;
   }
 
   @keyframes tablet768 {
     from {
+      opacity: 0;
       transform: translateY(500px);
     }
     to {
+      opacity: 1;
       transform: translateY(0);
     }
   }
@@ -169,6 +184,7 @@
     height: 300px;
     transform: translateY(600px);
     animation: tablet820 4.5s 1.25s forwards;
+    opacity: 0;
   }
   .button-link {
     font-size: 3.5rem;
@@ -177,9 +193,11 @@
 
   @keyframes tablet820 {
     from {
+      opacity: 0;
       transform: translateY(600px);
     }
     to {
+      opacity: 1;
       transform: translateY(0);
     }
   }
@@ -201,13 +219,16 @@
     position: relative;
     bottom: 20%;
     animation: desktop1200 4.5s 0.5s forwards;
+    opacity: 0;
   }
 
   @keyframes desktop1200 {
     from {
       transform: translateY(600px);
+      opacity: 0;
     }
     to {
+      opacity: 1;
       transform: translateY(0);
     }
   }
@@ -236,13 +257,16 @@
     position: relative;
     right: 0%;
     animation: desktop1920 4.5s 1s forwards;
+    opacity: 0;
   }
 
   @keyframes desktop1920 {
     from {
+      opacity: 0;
       transform: translateY(600px);
     }
     to {
+      opacity: 1;
       transform: translateY(0);
     }
   }

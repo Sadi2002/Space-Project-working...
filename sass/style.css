@@ -754,14 +754,17 @@ body {
           transform: translateY(300px);
   -webkit-animation: big-button 4.5s 1s forwards;
           animation: big-button 4.5s 1s forwards;
+  opacity: 0;
 }
 
 @-webkit-keyframes big-button {
   from {
+    opacity: 0;
     -webkit-transform: translateY(300px);
             transform: translateY(300px);
   }
   to {
+    opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -769,10 +772,12 @@ body {
 
 @keyframes big-button {
   from {
+    opacity: 0;
     -webkit-transform: translateY(300px);
             transform: translateY(300px);
   }
   to {
+    opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -847,25 +852,30 @@ body {
             transform: translateY(300px);
     -webkit-animation: big-button 4.5s 0.3s forwards;
             animation: big-button 4.5s 0.3s forwards;
+    opacity: 0;
   }
   @-webkit-keyframes big-button {
     from {
+      opacity: 0;
       -webkit-transform: translateY(300px);
               transform: translateY(300px);
     }
     to {
       -webkit-transform: translateY(0);
               transform: translateY(0);
+      opacity: 1;
     }
   }
   @keyframes big-button {
     from {
+      opacity: 0;
       -webkit-transform: translateY(300px);
               transform: translateY(300px);
     }
     to {
       -webkit-transform: translateY(0);
               transform: translateY(0);
+      opacity: 1;
     }
   }
 }
@@ -878,23 +888,28 @@ body {
             transform: translateY(500px);
     -webkit-animation: big-button 4.5s 0.1s forwards;
             animation: big-button 4.5s 0.1s forwards;
+    opacity: 0;
   }
   @-webkit-keyframes big-button {
     from {
+      opacity: 0;
       -webkit-transform: translateY(500px);
               transform: translateY(500px);
     }
     to {
+      opacity: 1;
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
   }
   @keyframes big-button {
     from {
+      opacity: 0;
       -webkit-transform: translateY(500px);
               transform: translateY(500px);
     }
     to {
+      opacity: 1;
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
@@ -911,25 +926,30 @@ body {
     height: 200px;
     -webkit-transform: translateY(500px);
             transform: translateY(500px);
+    opacity: 0;
     -webkit-animation: big-button 4.5s 0.5s forwards;
             animation: big-button 4.5s 0.5s forwards;
   }
   @-webkit-keyframes big-button {
     from {
+      opacity: 0;
       -webkit-transform: translateY(500px);
               transform: translateY(500px);
     }
     to {
+      opacity: 1;
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
   }
   @keyframes big-button {
     from {
+      opacity: 0;
       -webkit-transform: translateY(500px);
               transform: translateY(500px);
     }
     to {
+      opacity: 1;
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
@@ -960,25 +980,30 @@ body {
     height: 242px;
     -webkit-transform: translateY(500px);
             transform: translateY(500px);
+    opacity: 0;
     -webkit-animation: tablet768 4.5s 1s forwards;
             animation: tablet768 4.5s 1s forwards;
   }
   @-webkit-keyframes tablet768 {
     from {
+      opacity: 0;
       -webkit-transform: translateY(500px);
               transform: translateY(500px);
     }
     to {
+      opacity: 1;
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
   }
   @keyframes tablet768 {
     from {
+      opacity: 0;
       -webkit-transform: translateY(500px);
               transform: translateY(500px);
     }
     to {
+      opacity: 1;
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
@@ -996,6 +1021,7 @@ body {
             transform: translateY(600px);
     -webkit-animation: tablet820 4.5s 1.25s forwards;
             animation: tablet820 4.5s 1.25s forwards;
+    opacity: 0;
   }
   .button-link {
     font-size: 3.5rem;
@@ -1003,20 +1029,24 @@ body {
   }
   @-webkit-keyframes tablet820 {
     from {
+      opacity: 0;
       -webkit-transform: translateY(600px);
               transform: translateY(600px);
     }
     to {
+      opacity: 1;
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
   }
   @keyframes tablet820 {
     from {
+      opacity: 0;
       -webkit-transform: translateY(600px);
               transform: translateY(600px);
     }
     to {
+      opacity: 1;
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
@@ -1042,13 +1072,16 @@ body {
     bottom: 20%;
     -webkit-animation: desktop1200 4.5s 0.5s forwards;
             animation: desktop1200 4.5s 0.5s forwards;
+    opacity: 0;
   }
   @-webkit-keyframes desktop1200 {
     from {
       -webkit-transform: translateY(600px);
               transform: translateY(600px);
+      opacity: 0;
     }
     to {
+      opacity: 1;
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
@@ -1057,8 +1090,10 @@ body {
     from {
       -webkit-transform: translateY(600px);
               transform: translateY(600px);
+      opacity: 0;
     }
     to {
+      opacity: 1;
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
@@ -1091,23 +1126,28 @@ body {
     right: 0%;
     -webkit-animation: desktop1920 4.5s 1s forwards;
             animation: desktop1920 4.5s 1s forwards;
+    opacity: 0;
   }
   @-webkit-keyframes desktop1920 {
     from {
+      opacity: 0;
       -webkit-transform: translateY(600px);
               transform: translateY(600px);
     }
     to {
+      opacity: 1;
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
   }
   @keyframes desktop1920 {
     from {
+      opacity: 0;
       -webkit-transform: translateY(600px);
               transform: translateY(600px);
     }
     to {
+      opacity: 1;
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
