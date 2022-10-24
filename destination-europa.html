@@ -1,38 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="./assets/home/moon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <title>Space Moon</title>
+  </head>
+  <body>
+    <div class="moon">
+      <nav class="container__nav">
+        <img
+          src="./assets/shared/logo.svg"
+          alt="Black star on white rounded background"
+          class="container__nav__logo"
+        />
+        <img
+          src="./assets/shared/icon-hamburger.svg"
+          alt="burger icon"
+          class="container__nav__burger"
+        />
+        <ul class="container__nav__list hide">
+          <li class="container__nav__item">
+            <a href="./index.html" class="container__nav__link">
+              <span class="lighter">00</span> Home</a
+            >
+          </li>
+          <li class="container__nav__item">
+            <a href="./destination-moon.html" class="container__nav__link"
+              ><span class="lighter">01</span> Destination</a
+            >
+          </li>
+          <li class="container__nav__item">
+            <a href="#" class="container__nav__link"
+              ><span class="lighter">02</span> Crew</a
+            >
+          </li>
+          <li class="container__nav__item">
+            <a href="#" class="container__nav__link"
+              ><span class="lighter">03</span> Technology</a
+            >
+          </li>
+          <img
+            class="close-btn"
+            src="./assets/shared/icon-close.svg"
+            alt="close button"
+          />
+        </ul>
+      </nav>
+      <main class="container__main">
+        <img
+          src="./assets/destination/image-europa.png"
+          alt="Europa"
+          class="container__main__moon"
+        />
+        <div class="container__main__planets">
+          <ul class="container__main__list">
+            <li class="container__main__item mon">
+              <a href="destination-moon.html" class="container__main__link"
+                >Moon</a
+              >
+            </li>
+            <li class="container__main__item marc">
+              <a href="./destination-mars.html" class="container__main__link"
+                >Mars</a
+              >
+            </li>
+            <li class="container__main__item europa">
+              <a href="./destination-europa.html" class="container__main__link"
+                >Europa</a
+              >
+            </li>
+            <li class="container__main__item">
+              <a href="./destination-titan.html" class="container__main__link"
+                >Titan</a
+              >
+            </li>
+          </ul>
+          <h2 class="container__main__title">Europa</h2>
+          <p class="container__main__describe">
+            The smallest of the four Galilean moons orbiting Jupiter, Europa is
+            a winter lover’s dream. With an icy surface, it’s perfect for a bit
+            of ice skating, curling, hockey, or simple relaxation in your snug
+            wintery cabin.
+          </p>
+          <div class="container__main__info">
+            <span class="container__main__distance details">628 mil. km</span>
+            <span class="container__main__time details">3 years</span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./js/navbar.js"></script>
+  </body>
+</html>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Europa
-
-  The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+<!--   The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
   winter lover’s dream. With an icy surface, it’s perfect for a bit of 
   ice skating, curling, hockey, or simple relaxation in your snug 
-  wintery cabin.
-
-  Avg. distance
+  wintery cabin.  Avg. distance
   628 mil. km
 
   Est. travel time
-  3 years
-</body>
-</html>
+  3 years-->

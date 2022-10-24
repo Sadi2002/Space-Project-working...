@@ -1,0 +1,19 @@
+.mons::before {
+  opacity: 0;
+}
+.marcs::before {
+  opacity: 0;
+}
+
+.europas::before {
+  opacity: 0;
+}
+
+.titan::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  bottom: -10px;
+  background-color: $white;
+}

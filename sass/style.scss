@@ -1,6 +1,9 @@
 @import "./base/reset";
 @import "./sass-utils/variables";
 @import "./pages/moon";
+@import "./pages/mars";
+@import "./pages/titan";
+@import "./pages/europa";
 @import "./pages/home";
 @import "./layout/navigation";
 @import "./layout/header";
@@ -8,3 +11,4 @@
 @import "./components/button";
 @import "./components/text";
 @import "./components/details";
+@import "./components/active";

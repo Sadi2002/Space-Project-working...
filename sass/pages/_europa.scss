@@ -1,0 +1,15 @@
+.mon::before {
+  opacity: 0;
+}
+.marc::before {
+  opacity: 0;
+}
+
+.europa::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  bottom: -10px;
+  background-color: $white;
+}

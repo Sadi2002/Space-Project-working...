@@ -232,6 +232,7 @@
 
   .container__main__planets {
     width: 50%;
+    opacity: 0;
     transform: translateX(200px);
     animation: text 2.5s 2s forwards;
 
@@ -272,6 +273,83 @@
     flex-direction: row;
     justify-content: center;
     gap: 7rem;
+  }
+
+  .container__main__info {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container__main__moon {
+    width: 445px;
+    transform: translateX(-200px);
+    animation: moon 2s 1s forwards;
+
+    @keyframes moon {
+      from {
+        opacity: 0;
+        transform: translateX(-200px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .container__main__title {
+    font-size: 12rem;
+    margin-bottom: 3.2rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  .container__main__planets {
+    width: 24%;
+    opacity: 0;
+    transform: translateX(200px);
+    animation: text 2.5s 2s forwards;
+
+    @keyframes text {
+      from {
+        opacity: 0;
+        transform: translateX(200px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .container__main__link {
+    font-size: 2rem;
+  }
+  .container__main__list {
+    margin-bottom: 5rem;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+  .container__main__describe {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    margin-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  .container__main {
+    margin-top: 22rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 22rem;
   }
 
   .container__main__info {
