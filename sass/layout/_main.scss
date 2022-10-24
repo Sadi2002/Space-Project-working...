@@ -6,6 +6,20 @@
   &__moon {
     width: 170px;
     margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateX(200px);
+    animation: moon 2s 1s forwards;
+
+    @keyframes moon {
+      from {
+        opacity: 0;
+        transform: translateX(200px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
   }
 
   &__list {
@@ -26,6 +40,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    transform: translateX(-200px);
+    animation: moonText 2s 1s forwards;
+
+    @keyframes moonText {
+      from {
+        opacity: 0;
+        transform: translateX(-200px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
   }
 
   &__item:nth-child(1)::before {
@@ -40,7 +68,7 @@
   &__link {
     text-decoration: none;
     color: $very-light-blue;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: $bellefair;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -67,5 +95,23 @@
     text-align: center;
     padding-bottom: 3rem;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 5rem;
+  }
+
+  &__distance {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
   }
 }
