@@ -12,6 +12,7 @@
   transform: translateY(300px);
   animation: big-button 4.5s 1s forwards;
   opacity: 0;
+  background-color: $white;
 
   @keyframes big-button {
     from {
