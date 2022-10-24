@@ -29,19 +29,19 @@ body {
 }
 
 @media screen and (min-width: 540px) {
-  .container {
+  .moon {
     background-image: url("../assets/destination/background-destination-tablet.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .moon {
     background-image: url("../assets/destination/background-destination-tablet.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .moon {
     background-image: url("../assets/destination/background-destination-desktop.jpg");
   }
 }
@@ -1000,6 +1000,30 @@ body {
   .container__main {
     margin-top: 13rem;
   }
+}
+
+@media screen and (min-width: 912px) {
+  .container__main__moon {
+    width: 350px;
+  }
+  .container__main__title {
+    font-size: 10rem;
+    margin-bottom: 3.2rem;
+  }
+  .container__main__link {
+    font-size: 2rem;
+  }
+  .container__main__list {
+    margin-bottom: 5rem;
+  }
+  .container__main__describe {
+    font-size: 2.3rem;
+    line-height: 4.5rem;
+    margin-bottom: 11rem;
+  }
+  .container__main {
+    margin-top: 13rem;
+  }
   .container__main__info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1009,6 +1033,120 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 10rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__main__moon {
+    width: 400px;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    -webkit-animation: moon 2s 1s forwards;
+            animation: moon 2s 1s forwards;
+  }
+  @-webkit-keyframes moon {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(-200px);
+              transform: translateX(-200px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes moon {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(-200px);
+              transform: translateX(-200px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  .container__main__title {
+    font-size: 10rem;
+    margin-bottom: 3.2rem;
+    text-align: left;
+    width: 100%;
+  }
+  .container__main__planets {
+    width: 50%;
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    -webkit-animation: text 2.5s 2s forwards;
+            animation: text 2.5s 2s forwards;
+  }
+  @-webkit-keyframes text {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(200px);
+              transform: translateX(200px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes text {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(200px);
+              transform: translateX(200px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  .container__main__link {
+    font-size: 2rem;
+  }
+  .container__main__list {
+    margin-bottom: 5rem;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 3rem;
+  }
+  .container__main__describe {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    margin-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+  }
+  .container__main {
+    margin-top: 12rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 7rem;
+  }
+  .container__main__info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     gap: 10rem;
   }
 }
@@ -1463,6 +1601,12 @@ body {
 @media screen and (min-width: 768px) {
   .details {
     font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .details {
+    font-size: 3.7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
