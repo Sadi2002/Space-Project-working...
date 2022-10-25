@@ -16,6 +16,36 @@ body {
   background-color: #000;
 }
 
+.technology {
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem;
+  background-image: url("../assets/technology/background-technology-mobile.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: 0 0;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 540px) {
+  .technology {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .technology {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .technology {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+  }
+}
+
 .moon {
   width: 100%;
   min-height: 100vh;
@@ -186,14 +216,16 @@ body {
 
 .container,
 .moon,
-.crew {
+.crew,
+.technology {
   position: relative;
   overflow-x: hidden;
 }
 
 .container__nav,
 .moon__nav,
-.crew__nav {
+.crew__nav,
+.technology__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +240,8 @@ body {
 
 .container__nav__logo,
 .moon__nav__logo,
-.crew__nav__logo {
+.crew__nav__logo,
+.technology__nav__logo {
   -webkit-animation: logo 5s forwards;
           animation: logo 5s forwards;
   opacity: 0;
@@ -234,7 +267,8 @@ body {
 
 .container__nav__burger,
 .moon__nav__burger,
-.crew__nav__burger {
+.crew__nav__burger,
+.technology__nav__burger {
   width: 2.4rem;
   -webkit-animation: burger 2s forwards;
           animation: burger 2s forwards;
@@ -266,7 +300,8 @@ body {
 
 .container__nav__list,
 .moon__nav__list,
-.crew__nav__list {
+.crew__nav__list,
+.technology__nav__list {
   position: absolute;
   top: 0;
   right: 0%;
@@ -299,7 +334,8 @@ body {
 
 .container__nav__link,
 .moon__nav__link,
-.crew__nav__link {
+.crew__nav__link,
+.technology__nav__link {
   font-size: 2.3rem;
   text-decoration: none;
   color: #d0d6f9;
