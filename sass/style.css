@@ -42,6 +42,12 @@ body {
 
 @media screen and (min-width: 1200px) {
   .technology {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .technology {
     background-image: url("../assets/technology/background-technology-desktop.jpg");
   }
 }
@@ -1923,6 +1929,10 @@ body {
   padding: 0;
 }
 
+.technology-desktop {
+  display: none;
+}
+
 .container__nav__technology {
   margin-bottom: 6.5rem;
   padding: 3rem;
@@ -2025,6 +2035,225 @@ body {
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #d0d6f9;
+}
+
+@media screen and (min-width: 390px) {
+  .container__technology__box-img {
+    height: 250px;
+    margin-bottom: 5rem;
+  }
+  .container__technology__circle-box {
+    margin-bottom: 4rem;
+  }
+  .container__technology__title {
+    font-size: 2.6rem;
+  }
+  .container__technology__text {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .container__technology__box-img {
+    height: 250px;
+    margin-bottom: 5rem;
+  }
+  .container__technology__circle-box {
+    margin-bottom: 4rem;
+  }
+  .container__technology__title {
+    font-size: 2.6rem;
+  }
+  .container__technology__text {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__technology__box-img {
+    height: 310px;
+    margin-bottom: 7rem;
+  }
+  .container__technology__circle-box {
+    margin-bottom: 8rem;
+    gap: 5rem;
+  }
+  .container__technology__circle {
+    width: 7rem;
+    height: 7rem;
+    font-size: 3rem;
+  }
+  .container__technology__title {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 4.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .container__technology__text {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    opacity: 0.8;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .container__technology {
+    margin-top: 10rem;
+  }
+  .container__technology__box-img {
+    height: 330px;
+    margin-bottom: 7rem;
+  }
+  .container__technology__circle-box {
+    margin-bottom: 10rem;
+    gap: 5rem;
+  }
+  .container__technology__circle {
+    width: 7.5rem;
+    height: 7.5rem;
+    font-size: 3.2rem;
+  }
+  .container__technology__title {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 4.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 4rem;
+  }
+  .container__technology__text {
+    font-size: 2rem;
+    line-height: 4rem;
+    opacity: 0.8;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 912px) {
+  .container__technology {
+    margin-top: 15rem;
+  }
+  .container__technology__box-img {
+    height: 350px;
+    margin-bottom: 9rem;
+  }
+  .container__technology__circle-box {
+    margin-bottom: 10rem;
+    gap: 5rem;
+  }
+  .container__technology__circle {
+    width: 8rem;
+    height: 8rem;
+    font-size: 3.4rem;
+  }
+  .container__technology__title {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 4.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 4rem;
+  }
+  .container__technology__text {
+    font-size: 2.2rem;
+    line-height: 4.2rem;
+    opacity: 0.8;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .technology-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .technology-mobile {
+    display: none;
+  }
+  .container__technology {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-left: 20rem;
+    margin-top: 0;
+  }
+  .container__technology__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5rem;
+  }
+  .container__technology__box-img {
+    height: 550px;
+    margin-bottom: 0;
+  }
+  .container__technology__img {
+    width: 515px;
+    height: auto;
+  }
+  .container__technology__circle-box {
+    margin-bottom: 0;
+    gap: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100px;
+  }
+  .container__technology__circle {
+    width: 9rem;
+    height: 9rem;
+    font-size: 3.5rem;
+  }
+  .container__technology__title {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    text-align: left;
+    width: 100%;
+  }
+  .container__technology__text {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    opacity: 0.8;
+    width: 70%;
+    text-align: left;
+  }
+  .container__technology__text-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .big-button {

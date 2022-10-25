@@ -22,6 +22,11 @@
 
 @media screen and (min-width: 1200px) {
   .technology {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+}
+@media screen and (min-width: 1440px) {
+  .technology {
     background-image: url("../assets/technology/background-technology-desktop.jpg");
   }
 }

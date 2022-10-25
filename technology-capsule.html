@@ -1,32 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Space capsule
-
-  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
-  capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
-  you'll spend your time during the flight. It includes a space gym, cinema, 
-  and plenty of other activities to keep you entertained.
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="./assets/home/moon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <title>Space Technology</title>
+  </head>
+  <body>
+    <div class="technology">
+      <nav class="container__nav container__nav__technology">
+        <img
+          src="./assets/shared/logo.svg"
+          alt="Black star on white rounded background"
+          class="container__nav__logo"
+        />
+        <img
+          src="./assets/shared/icon-hamburger.svg"
+          alt="burger icon"
+          class="container__nav__burger"
+        />
+        <ul class="container__nav__list hide">
+          <li class="container__nav__item">
+            <a href="./index.html" class="container__nav__link">
+              <span class="lighter">00</span> Home</a
+            >
+          </li>
+          <li class="container__nav__item">
+            <a href="./destination-moon.html" class="container__nav__link"
+              ><span class="lighter">01</span> Destination</a
+            >
+          </li>
+          <li class="container__nav__item">
+            <a href="./crew-commander.html" class="container__nav__link"
+              ><span class="lighter">02</span> Crew</a
+            >
+          </li>
+          <li class="container__nav__item">
+            <a href="technology-capsule.html" class="container__nav__link"
+              ><span class="lighter">03</span> Technology</a
+            >
+          </li>
+          <img
+            class="close-btn"
+            src="./assets/shared/icon-close.svg"
+            alt="close button"
+          />
+        </ul>
+      </nav>
+      <div class="container__technology">
+        <div class="container__technology__box-img">
+          <img
+            src="./assets/technology/image-space-capsule-landscape.jpg"
+            alt=""
+            class="container__technology__img technology-mobile"
+          />
+          <img
+            src="./assets/technology/image-space-capsule-portrait.jpg"
+            alt=""
+            class="container__technology__img technology-desktop"
+          />
+        </div>
+        <div class="container__technology__box">
+          <div class="container__technology__circle-box">
+            <a
+              href="./technology-vehicle.html"
+              class="container__technology__circle"
+              >1</a
+            ><a
+              href="./technology-spaceport.html"
+              class="container__technology__circle technology-button"
+              >2</a
+            ><a
+              href="technology-capsule.html"
+              class="container__technology__circle"
+              >3</a
+            >
+          </div>
+          <div class="container__technology__text-box">
+            <h2 class="container__technology__title">Space capsule</h2>
+            <p class="container__technology__text">
+              A space capsule is an often-crewed spacecraft that uses a
+              blunt-body reentry capsule to reenter the Earth's atmosphere
+              without wings. Our capsule is where you'll spend your time during
+              the flight. It includes a space gym, cinema, and plenty of other
+              activities to keep you entertained.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/circles.js"></script>
+  </body>
 </html>
