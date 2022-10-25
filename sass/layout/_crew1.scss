@@ -211,6 +211,22 @@
       height: 2rem;
     }
   }
+  .commander {
+    width: 450px;
+    bottom: 3rem;
+  }
+
+  .pilot {
+    width: 450px;
+  }
+
+  .specialist {
+    width: 400px;
+  }
+
+  .engineer {
+    width: 500px;
+  }
 }
 @media screen and (min-width: 820px) {
   .container__commander {
@@ -268,6 +284,9 @@
       width: 2.3rem;
       height: 2.3rem;
     }
+  }
+  .engineer {
+    width: 550px;
   }
 }
 @media screen and (min-width: 912px) {
