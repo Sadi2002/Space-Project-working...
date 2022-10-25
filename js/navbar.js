@@ -12,6 +12,7 @@ const showNavbar = () => {
 // Function which hide our navigation
 const closeNavbar = () => {
   homeList.classList.add("hide");
+  homeList.style.tranform = "translateX(100%)";
 };
 
 // Listeners

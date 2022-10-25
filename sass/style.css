@@ -333,8 +333,10 @@ body {
   gap: 8rem;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   list-style: none;
 }
 
@@ -350,6 +352,7 @@ body {
 }
 
 .hide {
+  opacity: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
@@ -373,6 +376,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .hide {
+    opacity: 1;
+  }
   .container__nav {
     margin-bottom: 10rem;
   }
