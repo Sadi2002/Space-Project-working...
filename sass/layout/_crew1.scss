@@ -10,6 +10,20 @@
     justify-content: center;
     position: relative;
     margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateX(-300px);
+    animation: commander 2.5s 0.7s forwards;
+
+    @keyframes commander {
+      from {
+        opacity: 0;
+        transform: translateX(-300px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
 
     &::after {
       position: absolute;
@@ -31,6 +45,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    transform: translateX(300px);
+    animation: commanderText 2.5s 0.7s forwards;
+
+    @keyframes commanderText {
+      from {
+        opacity: 0;
+        transform: translateX(300px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
   }
 
   &__circles-box {
@@ -104,7 +132,21 @@
       display: flex;
       justify-content: center;
       position: relative;
-      margin-bottom: 3rem;
+      margin-bottom: 0rem;
+      opacity: 0;
+      transform: translateY(300px);
+      animation: commander 2.5s 0.7s forwards;
+
+      @keyframes commander {
+        from {
+          opacity: 0;
+          transform: translateY(300px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
 
       &::after {
         display: none;
@@ -112,15 +154,30 @@
     }
 
     &__img {
-      width: 465px;
+      width: 400px;
+      bottom: 0;
     }
 
     &__text-box {
       flex-direction: column-reverse;
+      opacity: 0;
+      transform: translateY(-80px);
+      animation: commanderText 2.5s 0.7s forwards;
+
+      @keyframes commanderText {
+        from {
+          opacity: 0;
+          transform: translateY(-80px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
     }
 
-    &__box {
-      margin-bottom: 0;
+    &__circles-box {
+      gap: 3rem;
     }
 
     &__name {
@@ -143,6 +200,140 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    &__circle {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+@media screen and (min-width: 820px) {
+  .container__commander {
+    flex-direction: column-reverse;
+
+    &__box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 3rem;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__img {
+      width: 465px;
+      bottom: 0;
+    }
+
+    &__box {
+      margin-bottom: 0;
+    }
+
+    &__circles-box {
+      gap: 3rem;
+    }
+
+    &__name {
+      font-size: 2.7rem;
+      margin-bottom: 2.5rem;
+    }
+    &__title {
+      font-size: 4.2rem;
+      margin-bottom: 3rem;
+      letter-spacing: 4px;
+    }
+
+    &__describe {
+      font-size: 2rem;
+      width: 65%;
+      margin-bottom: 3rem;
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10rem;
+    }
+
+    &__circle {
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+  }
+}
+@media screen and (min-width: 912px) {
+  .container__commander {
+    &__img {
+      width: 550px;
+      bottom: -2rem;
+    }
+
+    &__circles-box {
+      gap: 4rem;
+    }
+
+    &__name {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+    &__title {
+      font-size: 4.5rem;
+    }
+
+    &__describe {
+      font-size: 2.2rem;
+    }
+
+    &__details {
+      margin-top: 14rem;
+    }
+
+    &__circle {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__commander {
+    flex-direction: row-reverse;
+
+    &__img {
+      width: 450px;
+      bottom: -7rem;
+    }
+
+    &__circles-box {
+      padding-left: 4rem;
+      justify-content: flex-start;
+    }
+
+    &__name {
+      margin-bottom: 3.5rem;
+      width: 100%;
+      text-align: left;
+    }
+    &__title {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 5rem;
+    }
+
+    &__describe {
+      font-size: 2rem;
+      width: 100%;
+      text-align: left;
+      line-height: 3.5rem;
+    }
+
+    &__details {
+      padding: 4rem;
+      margin-bottom: 5rem;
     }
 
     &__circle {

@@ -6,12 +6,30 @@
   filter: brightness(0.8);
   object-fit: cover;
   background-size: 120%;
-  overflow: hidden;
 }
 
+@media screen and (min-width: 540px) {
+  .crew {
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
+    background-size: 100%;
+    background-position: 0 -80px;
+  }
+}
 @media screen and (min-width: 768px) {
   .crew {
     background-image: url("../assets/crew/background-crew-tablet.jpg");
     padding-bottom: 0;
+    overflow: hidden;
+    background-size: 120%;
+    background-position: 0 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .crew {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    padding-bottom: 0;
+    overflow: hidden;
+    background-size: 120%;
+    background-position: 0 0;
   }
 }
