@@ -1,0 +1,153 @@
+.container__commander {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 3rem;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &__img {
+    width: 200px;
+    position: relative;
+  }
+
+  &__text-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__circles-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  &__circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0.7rem;
+
+    &:nth-child(1) {
+      background-color: $white;
+    }
+  }
+
+  &__name {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    opacity: 0.5;
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  &__describe {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    color: $very-light-blue;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .container__commander__img {
+    width: 230px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__commander {
+    flex-direction: column-reverse;
+
+    &__box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 3rem;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__img {
+      width: 465px;
+    }
+
+    &__text-box {
+      flex-direction: column-reverse;
+    }
+
+    &__box {
+      margin-bottom: 0;
+    }
+
+    &__name {
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    &__title {
+      font-size: 4rem;
+      margin-bottom: 3rem;
+      letter-spacing: 4px;
+    }
+
+    &__describe {
+      font-size: 1.8rem;
+      width: 65%;
+      margin-bottom: 3rem;
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__circle {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
