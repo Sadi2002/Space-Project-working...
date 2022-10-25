@@ -100,19 +100,36 @@ body {
 .crew {
   width: 100%;
   height: 100vh;
-  padding: 3rem 3rem 8rem;
+  padding: 3rem 3rem 5rem;
   background-image: url("../assets/crew/background-crew-mobile.jpg");
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
   -o-object-fit: cover;
      object-fit: cover;
   background-size: 120%;
+  background-position: 0 -80px;
+}
+
+@media screen and (min-width: 390px) {
+  .crew {
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
+    background-size: 130%;
+    background-position: 0 -80px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .crew {
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
+    background-size: 130%;
+    background-position: 0 -80px;
+  }
 }
 
 @media screen and (min-width: 540px) {
   .crew {
     background-image: url("../assets/crew/background-crew-mobile.jpg");
-    background-size: 100%;
+    background-size: 120%;
     background-position: 0 -80px;
   }
 }
@@ -132,8 +149,8 @@ body {
     background-image: url("../assets/crew/background-crew-desktop.jpg");
     padding-bottom: 0;
     overflow: hidden;
-    background-size: 120%;
-    background-position: 0 0;
+    background-size: 150%;
+    background-position: 0 -250px;
   }
 }
 
@@ -1501,10 +1518,6 @@ body {
   padding: 0.7rem;
 }
 
-.container__commander__circle:nth-child(1) {
-  background-color: #fff;
-}
-
 .container__commander__name {
   font-family: "Bellefair";
   font-style: normal;
@@ -1538,6 +1551,14 @@ body {
   line-height: 2.6rem;
   color: #d0d6f9;
   text-align: center;
+}
+
+.actives {
+  background: #fff;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  padding: 0.7rem;
 }
 
 @media screen and (min-width: 412px) {
@@ -1801,6 +1822,48 @@ body {
   .container__commander__circle {
     width: 2rem;
     height: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container__commander__img {
+    width: 500px;
+  }
+  .commander {
+    width: 450px;
+  }
+  .pilot {
+    width: 500px;
+  }
+  .specialist {
+    width: 450px;
+  }
+  .engineer {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container__commander__img {
+    width: 600px;
+  }
+  .commander {
+    width: 700px;
+  }
+  .pilot {
+    width: 750px;
+  }
+  .specialist {
+    width: 600px;
+  }
+  .engineer {
+    width: 850px;
+  }
+  .container__commander__text-box {
+    padding: 5rem;
+  }
+  .container__commander__details {
+    margin-bottom: 15rem;
   }
 }
 

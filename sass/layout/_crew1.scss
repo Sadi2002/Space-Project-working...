@@ -76,10 +76,6 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
     padding: 0.7rem;
-
-    &:nth-child(1) {
-      background-color: $white;
-    }
   }
 
   &__name {
@@ -116,6 +112,14 @@
     color: $very-light-blue;
     text-align: center;
   }
+}
+
+.actives {
+  background: $white;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  padding: 0.7rem;
 }
 
 @media screen and (min-width: 412px) {
@@ -340,5 +344,56 @@
       width: 2rem;
       height: 2rem;
     }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container__commander__img {
+    width: 500px;
+  }
+
+  .commander {
+    width: 450px;
+  }
+
+  .pilot {
+    width: 500px;
+  }
+
+  .specialist {
+    width: 450px;
+  }
+
+  .engineer {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container__commander__img {
+    width: 600px;
+  }
+
+  .commander {
+    width: 700px;
+  }
+
+  .pilot {
+    width: 750px;
+  }
+
+  .specialist {
+    width: 600px;
+  }
+
+  .engineer {
+    width: 850px;
+  }
+
+  .container__commander__text-box {
+    padding: 5rem;
+  }
+
+  .container__commander__details {
+    margin-bottom: 15rem;
   }
 }
