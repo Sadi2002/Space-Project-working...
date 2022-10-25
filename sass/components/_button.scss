@@ -72,6 +72,11 @@
   right: 3rem;
 }
 
+.technology-button {
+  background-color: $white;
+  color: #000;
+}
+
 @media screen and (min-width: 375px) {
   .big-button {
     transform: translateY(300px);
