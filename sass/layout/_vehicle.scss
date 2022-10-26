@@ -364,3 +364,87 @@
     justify-content: center;
   }
 }
+@media screen and (min-width: 1920px) {
+  .technology-desktop {
+    display: flex;
+  }
+
+  .technology-mobile {
+    display: none;
+  }
+  .container__technology {
+    flex-direction: row-reverse;
+    padding-left: 20rem;
+    margin-top: 20rem;
+
+    &__box {
+      display: flex;
+      gap: 5rem;
+      opacity: 0;
+      transform: translateX(-300px);
+      animation: technologyText 2.5s 0.5s forwards;
+    }
+  }
+  .container__technology__box-img {
+    height: 550px;
+    margin-bottom: 0;
+  }
+
+  .container__technology__img {
+    width: 515px;
+    height: auto;
+    opacity: 0;
+    transform: translateX(300px);
+    animation: technologyImg 2.5s 0.5s forwards;
+
+    @keyframes technologyImg {
+      from {
+        opacity: 0;
+        transform: translateX(300px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+  }
+
+  .container__technology__circle-box {
+    margin-bottom: 0;
+    gap: 5rem;
+    flex-direction: column;
+    width: 100px;
+  }
+
+  .container__technology__circle {
+    width: 9rem;
+    height: 9rem;
+    font-size: 3.5rem;
+  }
+
+  .container__technology__title {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.5rem;
+    line-height: 6.4rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  .container__technology__text {
+    font-size: 2.2rem;
+    line-height: 4rem;
+    opacity: 0.8;
+    width: 70%;
+    text-align: left;
+  }
+
+  .container__technology__text-box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
