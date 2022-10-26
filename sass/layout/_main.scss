@@ -8,7 +8,7 @@
     margin-bottom: 3rem;
     opacity: 0;
     transform: translateX(200px);
-    animation: moon 2s 1s forwards;
+    animation: moon 2s 0.7s forwards;
 
     @keyframes moon {
       from {
@@ -42,7 +42,7 @@
     align-items: center;
     opacity: 0;
     transform: translateX(-200px);
-    animation: moonText 2s 1s forwards;
+    animation: moonText 2s 0.7s forwards;
 
     @keyframes moonText {
       from {
@@ -120,6 +120,37 @@
   .container__main__moon {
     width: 300px;
     margin-bottom: 4rem;
+    opacity: 0;
+    transform: translateX(300px);
+    animation: moon 2s 0.5s forwards;
+
+    @keyframes moon {
+      from {
+        opacity: 0;
+        transform: translateX(300px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .container__main__planets {
+    opacity: 0;
+    transform: translateX(-300px);
+    animation: moonText 2s 0.5s forwards;
+
+    @keyframes moonText {
+      from {
+        opacity: 0;
+        transform: translateX(-300px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
   }
 
   .container__main__title {
@@ -209,7 +240,7 @@
   .container__main__moon {
     width: 400px;
     transform: translateX(-200px);
-    animation: moon 2s 1s forwards;
+    animation: moon 2s 0.5s forwards;
 
     @keyframes moon {
       from {
@@ -234,7 +265,7 @@
     width: 50%;
     opacity: 0;
     transform: translateX(200px);
-    animation: text 2.5s 2s forwards;
+    animation: text 2.5s 0.5s forwards;
 
     @keyframes text {
       from {
@@ -286,7 +317,7 @@
   .container__main__moon {
     width: 445px;
     transform: translateX(-200px);
-    animation: moon 2s 1s forwards;
+    animation: moon 2s 0.5s forwards;
 
     @keyframes moon {
       from {
@@ -311,7 +342,7 @@
     width: 24%;
     opacity: 0;
     transform: translateX(200px);
-    animation: text 2.5s 2s forwards;
+    animation: text 2.5s 0.5s forwards;
 
     @keyframes text {
       from {

@@ -12,7 +12,7 @@
     margin-bottom: 3rem;
     opacity: 0;
     transform: translateX(-300px);
-    animation: commander 2.5s 0.7s forwards;
+    animation: commander 2s 0.7s forwards;
 
     @keyframes commander {
       from {
@@ -47,7 +47,7 @@
     align-items: center;
     opacity: 0;
     transform: translateX(300px);
-    animation: commanderText 2.5s 0.7s forwards;
+    animation: commanderText 2s 0.7s forwards;
 
     @keyframes commanderText {
       from {
@@ -139,7 +139,7 @@
       margin-bottom: 0rem;
       opacity: 0;
       transform: translateY(300px);
-      animation: commander 2.5s 0.7s forwards;
+      animation: commander 2s 0.7s forwards;
 
       @keyframes commander {
         from {
@@ -166,7 +166,7 @@
       flex-direction: column-reverse;
       opacity: 0;
       transform: translateY(-80px);
-      animation: commanderText 2.5s 0.7s forwards;
+      animation: commanderText 2s 0.7s forwards;
 
       @keyframes commanderText {
         from {

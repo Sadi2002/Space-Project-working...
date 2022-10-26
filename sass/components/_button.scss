@@ -10,7 +10,7 @@
   border: none;
   cursor: pointer;
   transform: translateY(300px);
-  animation: big-button 4.5s 1s forwards;
+  animation: big-button 3s forwards;
   opacity: 0;
   background-color: $white;
 
@@ -80,7 +80,7 @@
 @media screen and (min-width: 375px) {
   .big-button {
     transform: translateY(300px);
-    animation: big-button 4.5s 0.3s forwards;
+    animation: big-button 3s forwards;
     opacity: 0;
 
     @keyframes big-button {
@@ -100,7 +100,7 @@
     width: 180px;
     height: 180px;
     transform: translateY(500px);
-    animation: big-button 4.5s 0.1s forwards;
+    animation: big-button 3s forwards;
     opacity: 0;
   }
 
@@ -126,7 +126,7 @@
     height: 200px;
     transform: translateY(500px);
     opacity: 0;
-    animation: big-button 4.5s 0.5s forwards;
+    animation: big-button 3s forwards;
   }
 
   @keyframes big-button {
@@ -166,7 +166,7 @@
     height: 242px;
     transform: translateY(500px);
     opacity: 0;
-    animation: tablet768 4.5s 1s forwards;
+    animation: tablet768 3s forwards;
   }
 
   @keyframes tablet768 {
@@ -189,7 +189,7 @@
     width: 300px;
     height: 300px;
     transform: translateY(600px);
-    animation: tablet820 4.5s 1.25s forwards;
+    animation: tablet820 3s forwards;
     opacity: 0;
   }
   .button-link {
@@ -224,7 +224,7 @@
     height: 250px;
     position: relative;
     bottom: 20%;
-    animation: desktop1200 4.5s 0.5s forwards;
+    animation: desktop1200 3s forwards;
     opacity: 0;
   }
 
@@ -262,7 +262,7 @@
     height: 300px;
     position: relative;
     right: 0%;
-    animation: desktop1920 4.5s 1s forwards;
+    animation: desktop1920 3s forwards;
     opacity: 0;
   }
 

@@ -6,13 +6,12 @@ const navbarMobileList = document.querySelectorAll(".container__nav__link");
 
 // Function which show hiden navigation
 const showNavbar = () => {
-  homeList.classList.remove("hide");
+  homeList.classList.add("hide");
 };
 
 // Function which hide our navigation
 const closeNavbar = () => {
-  homeList.classList.add("hide");
-  homeList.style.tranform = "translateX(100%)";
+  homeList.classList.remove("hide");
 };
 
 // Listeners
